@@ -2,15 +2,13 @@
 
 int main(void)
 {
-    int a, b;
-    printf("Input two integers : ");
-    scanf("%i %i", &a, &b);
+    int a, minutes, seconds;
+    printf("Input the seconds : ");
+    scanf("%i", &a);
     
-    printf("+ result is : %d\n", a + b);
-    printf("- result is : %d\n", a - b);
-    printf("* result is : %d\n", a * b);
-    printf("/ result is : %d\n", a / b);
-    printf("%% result is : %d\n", a % b);
+    minutes = a / 60;
+    seconds = a % 60;
 
+    printf("The time is %i:%i", minutes, seconds);
     return 0;
 }
